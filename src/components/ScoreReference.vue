@@ -99,7 +99,7 @@
   </v-container>
 </template>
 
-<script setup>
+<script setup lang="ts">
 const combinations = [
   { name: 'Fifteen (e.g., 8+7, 10+5, A+K+4)', points: 2, description: 'Any combination of cards that sum to 15' },
   { name: 'Pair', points: 2, description: 'Two cards of the same rank (e.g., two Queens)' },

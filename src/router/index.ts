@@ -74,9 +74,9 @@ router.beforeEach(async (to, from, next) => {
   if (to.meta.requiresAuth && !authStore.isLoggedIn) {
     // Redirect to login page, preserving the original intended path as a query param
     next({ name: 'login', query: { redirect: to.fullPath } });
-  } else if (to.name === 'login' && authStore.isLoggedIn) {
+  // } else if (to.name === 'login' && authStore.isLoggedIn) {
     // If user is logged in and tries to go to login page, redirect to dashboard
-    next({ name: 'dashboard' });
+    // next({ name: 'dashboard' });
   } else {
     // Continue to the route
     next();
