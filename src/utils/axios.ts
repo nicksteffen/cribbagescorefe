@@ -3,7 +3,8 @@ import axios from 'axios';
 
 // --- Axios Global Configuration ---
 // axios.defaults.baseURL = 'https://localhost:5000'; // Your Flask backend URL
-axios.defaults.baseURL = 'https://cribbagescorebe.onrender.com'
+// axios.defaults.baseURL = 'https://cribbagescorebe.onrender.com'
+axios.defaults.baseURL = import.meta.env.VUE_APP_AXIOS_BASE_URL
 axios.defaults.withCredentials = true; // REMOVED: Not needed if not sending/receiving cookies for JWT
 
 // --- Request Interceptor to Add Authorization Header ---
