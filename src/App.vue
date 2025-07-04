@@ -17,7 +17,6 @@ import { RouterLink, RouterView } from 'vue-router'
       <v-app-bar-title>Cribbage Tracker</v-app-bar-title>
       <v-spacer></v-spacer>
       <v-btn text to="/">Home</v-btn>
-      <v-btn text to="/about">About</v-btn>
       <v-btn text to="/login">Login</v-btn>
       <v-btn text to="/dashboard">Dashboard</v-btn>
       <v-btn text to="/score-reference">Score Reference</v-btn>
